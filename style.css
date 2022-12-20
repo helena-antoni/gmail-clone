@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans'; 
+}
+ 
+body{ 
+   min-width: none;
+   min-height: none; 
+   -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+    height: 1200vh; 
+}
+
+header{
+    display: flex; 
+    align-items: center;   
+    flex-direction: row; 
+    border-bottom: 1px solid #F0F2F3; 
+    justify-content: space-between; 
+}
+
+span {
+    color: #64676C;
+    cursor: pointer;   
+} 
+
+.header-left{
+    display: flex;
+    align-items: center;  
+    margin: 21px 32.3px; 
+    margin-right: 60px;    
+}
+
+
+.header-left .botao{
+    display: flex;
+    align-items: center;   
+    cursor: pointer;
+    margin-left: 23px;
+}
+
+.header-left img{
+    object-fit: contain; 
+    align-items: center;   
+    margin-right: 14px;
+}
+
+.botao p{
+    color: #64686C; 
+    font-size: 24px; 
+    text-decoration:none; 
+} 
+
+.header-left  span{ 
+    cursor:pointer;
+}  
+
+.dois{ 
+    width: 77%; 
+}
+
+.header-middle{ 
+    width: 720px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA; 
+    padding: 6.35px;  
+    margin-top: 9px;
+    margin-bottom: 7px; 
+}
+
+.header-middle input{
+    width: 700px; 
+    display: flex;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;    
+    background: transparent;  
+    border-radius: 2px;
+    min-width: 30%;
+}
+ 
+.header-middle span{ 
+    margin: 19px 14px; 
+    border-radius: 50%;
+}
+
+.header-right{ 
+    display: flex; 
+    align-items: center;
+    gap: 24px; 
+    float: right;
+    padding-right: 20px;  
+}
+
+.main-body{
+    display: flex;
+    height: 100vh; 
+}
+
+.main-body .sidebar{   
+    margin-top: 17.66px;
+    padding-left: 12.89px;
+    object-fit: contain; 
+    align-items: center;     
+}
+
+.main-body .sidebar-compose{ 
+    display: flex;
+    width: 165.22px;
+    height: 54.8px;  
+    font-size: 18px;
+    cursor: pointer; 
+    text-align: center;  
+    background: #FFFFFF;   
+    border-radius: 27.2416px;
+    color: #777B7E;  
+    border: 0 none;
+    outline: 0;   
+    box-shadow: 1px 1px 5px #979797;    
+    padding:  16px 30px;
+} 
+
+.sidebar-master{
+    display: flex;
+    flex-wrap: wrap;
+    width: 253px; 
+    margin-top: 27px;   
+    flex-direction: column;   
+    width: 250px;   
+}
+
+.sidebarOption { 
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: left;  
+    padding-left: 27px;  
+    padding-top: 10.3px;
+    padding-bottom: 10.3px;
+    border-top-right-radius: 60px; 
+    border-end-end-radius: 60px;  
+    margin-right: 20px;  
+} 
+
+.sidebarOption#selected{
+    background-color: #FCE8E7;
+    color: #ff4238;  
+    cursor: pointer;
+}
+
+#selected h3, #selected span{
+    color: #ff4238;   
+}
+
+.sidebarOption:hover, .sidebarOption#selected:hover{
+    background-color: #f7eceb;
+    cursor: pointer;
+}
+.sidebarOption:active{
+     
+}
+
+.sidebarOption span{ 
+    display: flex;  
+    color: #64676C;    
+    gap: 23px;  
+    text-align: center;
+    object-fit: contain; 
+    font-size: 20px;
+    min-width: 15px;
+} 
+
+.sidebarOption span h3{
+    font-family: 'Roboto';
+    font-size: 14px;
+    padding: 3px;   
+}  
+ 
+.sidebar-footer{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.sidebar-footer .material-icons{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+.sidebar-footer .material-icons:hover{
+    background-color: #faf3f3;
+    border-radius: 50%; 
+    
+} 
+
+.email{
+    height: 100vh;
+    width: 100vw;  
+    flex:1;
+    overflow: scroll;
+}
+
+.email-settings{ 
+    display: flex;
+    padding: 17px;
+    border-bottom: 1px solid #F0F2F3 ;   
+    justify-content: space-between;  
+    height: 50px; 
+}
+
+.email-settings span{
+    font-size: 17px;
+    min-width: 15px;
+}
+.email-settings p{
+    font-size: 13px;
+    color: #64676C;
+}
+.email-settings-left{ 
+    text-align: center;
+    gap: 30px;
+    display: flex; 
+}
+
+.email-settings-right{
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    display: flex;  
+}
+
+.email-settings .material-icons{
+    margin: flex;
+    cursor:pointer;
+}
+
+.email-sections{
+    position: sticky;
+    top:0;
+    display: flex;   
+}
+ 
+.email-sections .section, .section-selected{ 
+    display: flex;
+    align-items: center; 
+    min-width: 200px;
+    border-bottom-left-radius: 3px ;
+    border-bottom-right-radius: 3px ;  
+    width: 259px; 
+    font-size: 14px;
+    gap: 12px; 
+    padding: 15px; 
+}
+.section-selected{ 
+    border-bottom: 3px solid #ff4238; 
+    background-color: #FCE8E7;
+}
+ 
+.section h4{
+    color: #64676C;   
+}
+.section-selected .material-icons, .section-selected h4{
+    color:#ff4238;
+
+}
+
+.section:hover,
+.section .material-icons:hover, 
+.section-selected:hover{
+    background-color: #fdf1ef;
+    cursor: pointer;  
+}
+ 
+  
+.email-list{ 
+    width: auto; 
+    display: flex; 
+    text-align: center;
+    flex-wrap: wrap;      
+    position: relative; 
+}  
+
+.email-list-row{
+    font-size: 14px; 
+    display: flex; 
+    text-align: center;  
+    border-bottom: 1px solid #F0F2F3; 
+    height: 50px; 
+    cursor: pointer;   
+    width: 80vw; 
+
+
+}
+.email-list-row:hover{ 
+    border-top: 1px solid #F0F2F3;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.24);
+}
+
+
+.first{
+    display: flex;
+    text-align: center;
+    padding: 15px;  
+    flex-wrap: wrap;   
+    gap: 5px;   
+}
+.email-list-options input{  
+    width: 14px;  
+} 
+.email-list-options .material-icons{ 
+    font-size: 18px; 
+}
+
+.email-tittle{ 
+    flex: .9;
+    text-align: left; 
+    width: 200px;
+ }
+ 
+ 
+.email-list-message{ 
+    display: flex; 
+    flex:.8;
+    align-items: center;
+    font-size: 14px; 
+    flex-wrap: wrap;
+    width: 60vw;
+}
+
+ 
+.email-list-message h4{
+    /* border: 2px solid blueviolet; */ 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    padding: 15px;   
+}
+
+
+  .descrition{
+    font-weight: 400;
+    color: #64676C;  
+}
+
+.end p{
+    float:right; 
+    font-size: 12px;  
+    font-weight: bold;
+    padding: 15px; 
+    object-fit: contain;
+    position: none;
+}
+ 
+ 
